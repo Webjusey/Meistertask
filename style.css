@@ -21,3 +21,11 @@
     padding: 20px;
     box-sizing: border-box;
 }
+
+.container{
+    margin-top: 20px;
+}
+
+.inputField{
+    margin-bottom: 10px;
+}
