@@ -1,25 +1,27 @@
-document.getElementById('addInputButton').addEventListener('click', function (){
-    const inputContainer = document.getElementById('inputContainer');
+$(document).ready(function(){
+    $('#addInputButton').on('click', function(){
+        const $inputContainer = $('#inputContainer');
 
-    //Create new Input field
-    const newInputField = document.createElement('input');
-    newInputField.type = "text";
-    newInputField.className = 'input-field';
+        // Create new input field
+        const $newInputField = $('<input>', {
+            type: 'text',
+            class: 'input-field'
+        });
 
-    //Create save Button for the input field
-    const saveButton = document.createElement('button');
-    saveButton.textContent = 'Speichern';
-    saveButton.addEventListener('click', function(){
-        const inputValue = newInputField.value;
-        if(inputValue){
-            const outputContainer = document.getElementById('outputContainer');
-            const newText = document.createElement('p');
-            newText.textContent = inputValue;
-            outputContainer.appendChild(newText);
-            newInputField.remove();
-            saveButton.remove();
-        }
+        // Create save button for the input field
+        const $saveButton = $('<button>', {
+            text: 'Speichern'
+        }).on('click', function(){
+            const inputValue = $newInputField.val();
+
+            if(inputValue){
+                const $newText = $('<p>').text(inputValue);
+                $('#outputContainer').append($newText);
+                $newInputField.remove();
+                $saveButton.remove();
+            }
+        });
+
+        $inputContainer.append($newInputField, $saveButton);
     });
-    inputContainer.appendChild(newInputField);
-    inputContainer.appendChild(saveButton);
 });
