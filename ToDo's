@@ -1,11 +1,7 @@
-```[tasklist] 
+### Planned Features 
+- [ ] creating task
+- [ ] install IntelliJ
+- [ ] create database
 
-### Planed Features 
-- [] creating task
-- [] install IntelliJ
-- [] create database
-
-Done Features
+### Done Features
 - [x] test
-
-```
