@@ -4,12 +4,24 @@
 
 #box1{
     background-color: yellow;
+    float: left;
+    margin-right: 2%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #box2{
     background-color: aquamarine;
+    float: left;
+    margin-right: 2%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #box3{
     background-color: bisque;
+    float: left;
+    margin-right: 2%;
+    padding: 20px;
+    box-sizing: border-box;
 }
