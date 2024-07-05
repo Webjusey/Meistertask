@@ -1,3 +1,8 @@
+body{
+    font-family: Beiruti, sans-serif;
+    font-size: 22px;
+}
+
 #box1{
     background-color: yellow;
     float: left;
